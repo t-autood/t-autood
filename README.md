@@ -1,4 +1,5 @@
-# T-AutoOD
+## T-AutoOD
+This repo includes model, pipelines, datasets used in the following paper.
 
 ## References
 <a id="1">[1]</a> 

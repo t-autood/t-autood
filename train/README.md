@@ -1,3 +1,4 @@
+## Overview
 This folder includes pipelines and datasets for training our meta learner, T-AutoOD. We ran more than 200K experiments, each experiment includes a pair of pipeline and dataset and gives one column in one of the 520+ datasets.
 
 ## Pipelines
@@ -8,4 +9,5 @@ This folder includes pipelines and datasets for training our meta learner, T-Aut
 
 "test_datasets_by_dsname.csv" includes list of datasets used for testing while "train_datasets_by_dsname.csv" includes a list of datasets for training. 
 
-Note that these whole set of 520+ datasets can be used for training the meta learner. In this case, you can test your meta learner against the benchmark data set in the benchmark_datasets.tar.gz.
+## Test with External benchmarks
+The  whole set of 520+ datasets can be used for training the meta learner. In this case, you can test your meta learner against the benchmark data set in the benchmark_datasets.tar.gz in the main folder.
