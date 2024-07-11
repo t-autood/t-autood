@@ -1,5 +1,17 @@
-# t-autood
-This repo includes a pretrained meta learner and code that loads the meta learner to score different data sets.
+# T-AutoOD
+
+## References
+<a id="1">[1]</a> 
+LongVu, PeterKirchner, CharuC.Aggarwal, HorstSamulowitz (2024). 
+Instance-Level Metalearning for Outlier Detection.
+International Joint Conference on Artificial  Intelligence (IJCAI-2024).
+
+## Contact
+Long Vu (lhvu@us.ibm.com)
+
+
+## Reproducing evaluation numbers reported in the paper
+This repo includes a pretrained meta learner and code that loads the meta learner to score different data sets. Follow the below steps to reproduce experiment numbers reported in the paper.
 
 1. Clone the repo to local machine: git clone https://github.com/t-autood/t-autood.git     - after this command, the "t-autood" sub-folder is created.
 2. cd t-autood
@@ -8,3 +20,7 @@ This repo includes a pretrained meta learner and code that loads the meta learne
 5. File model_s23283215.pkl is the pretrained LGBM meta learner, file top_pipeline_names.csv includes names of selected pipelines stored in "pipelines" sub-folder. These names are used by benchmark.py to select columns in data set files, preparing for meta learner's prediction.
 6. To run the meta learner on pre-scored benchmark data sets in "benchmark_datasets" sub-folder: python benchmark.py  
 7. To score a new data set cardio_odds.csv with the pretraind meta learner: python score_new_dataset.py  . This script uses 20 pipelines to fit and score the raw data set, converting it to the new representation consumed by the meta learner for detecting outliers in cardio_odds.csv data set.
+
+
+## Pipelines and Datasets used to train our meta learner
+The 400 pipelines and 500 datasets we used to train T-AutoOD meta learner can be found in the "train" folder. Read the README in "train" folder for more information.
