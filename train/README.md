@@ -1,4 +1,4 @@
-This folder includes pipelines and datasets for training the meta learner.
+This folder includes pipelines and datasets for training our meta learner, T-AutoOD. We ran more than 200K experiments, each experiment includes a pair of pipeline and dataset and gives one column in one of the 520+ datasets.
 
 "pipelines" folder includes 400+ sklearn compatible pipelines in joblib format.
 
